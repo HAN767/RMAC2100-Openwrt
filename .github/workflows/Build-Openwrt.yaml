@@ -17,8 +17,6 @@ jobs:
           git clone https://github.com/coolsnowwolf/lede.git
           cd lede
           ./scripts/feeds update -a && ./scripts/feeds install -a
-          ls -a
-          cd $GITHUB_WORKSPACE/ && ls -a
           
       - name: Checkout
         uses: actions/checkout@v2
