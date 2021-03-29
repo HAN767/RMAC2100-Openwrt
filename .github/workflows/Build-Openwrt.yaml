@@ -41,6 +41,7 @@ jobs:
       - name: Custom Configuration
         run: |
           [ -e $GITHUB_WORKSPACE/config ] && mv $GITHUB_WORKSPACE/config lede/.config
+          cd lede
 
       - name: Build Process
         id: build
