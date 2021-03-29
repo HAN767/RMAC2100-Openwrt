@@ -40,7 +40,7 @@ jobs:
 
       - name: Custom Configuration
         run: |
-          cp $GITHUB_WORKSPACE/config ./config
+          [ -e $GITHUB_WORKSPACE/config ] && cp $GITHUB_WORKSPACE/config ./config
 
       - name: Build Process
         id: build
